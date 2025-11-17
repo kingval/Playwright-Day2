@@ -1,2 +1,2 @@
 # Playwright-Day2
-test 2
+Practicing Variables data types
