@@ -1,0 +1,35 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://thinking-tester-contact-list.herokuapp.com/');
+  await page.getByRole('button', { name: 'Sign up' }).click();
+  await page.getByRole('textbox', { name: 'First Name' }).click();
+  await page.getByRole('textbox', { name: 'First Name' }).fill('Chetan');
+  await page.getByRole('textbox', { name: 'Last Name' }).click();
+  await page.getByRole('textbox', { name: 'Last Name' }).fill('Valand');
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill('test@testing.com');
+  await page.getByRole('textbox', { name: 'Password' }).click();
+  await page.getByRole('textbox', { name: 'Password' }).click();
+  await page.getByRole('textbox', { name: 'Password' }).click();
+  await page.getByRole('textbox', { name: 'Password' }).fill('Test123!');
+  await page.getByRole('button', { name: 'Submit' }).click();
+  await page.getByText('Email address is already in').click();
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowRight');
+  await page.getByRole('textbox', { name: 'Email' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email' }).fill('test123@testing.com');
+  await page.getByRole('button', { name: 'Submit' }).click();
+  await page.getByRole('button', { name: 'Cancel' }).click();
+});
