@@ -44,9 +44,12 @@ console.log(typeof greet); // Output: function
 //Date
 let today = new Date();
 console.log(typeof today); // Output: object
+console.log(today); // Output: current date and time
 //RegExp
 let pattern = /ab+c/;
 console.log(typeof pattern); // Output: object  
+console.log(pattern); // Output: /ab+c/
+
 //Map
 let map = new Map();
 console.log(typeof map); // Output: object
