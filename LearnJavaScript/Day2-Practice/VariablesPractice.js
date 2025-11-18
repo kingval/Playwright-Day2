@@ -23,8 +23,8 @@ console.log(city);
 //using let and const to store user profile information
 const userEmail = "king.valand@gmail.com"; // using const as email should remain constant
 const userID = "kingvaland36"; // using const as userID should remain constant
-let password = "securePass@2024"; // using let as password might change
-password = "newPass@2024"; // updating the password
+let password = "securePass@2025"; // using let as password might change
+password = "newPass@2025"; // updating the password
 
 
 console.log("User Email:", userEmail);
