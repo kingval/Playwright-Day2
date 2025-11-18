@@ -1,0 +1,38 @@
+//git checkout command is used to switch between branches in a Git repository and to restore working tree files.
+// To switch to an existing branch, use the following command:
+// git checkout branch_name
+// Example:
+// git checkout feature-branch
+// This command switches the current working branch to 'feature-branch'.
+// To create a new branch and switch to it immediately, use the -b option:
+// git checkout -b new_branch_name
+// Example:
+// git checkout -b new-feature
+// This command creates a new branch called 'new-feature' and switches to it.
+// Note: In newer versions of Git, it's recommended to use 'git switch' for switching branches:
+// git switch branch_name
+// To switch to an existing branch using git switch:
+// git switch feature-branch
+// To create and switch to a new branch using git switch:
+// git switch -c new-feature    
+// Note: Both 'git checkout' and 'git switch' commands are used for branch management, but 'git switch' is more focused on branch operations, making it clearer and easier to use for that purpose.
+// For restoring files, 'git checkout' is still used as follows:
+// git checkout -- file_name
+// Example:
+// git checkout -- index.html
+// This command restores the 'index.html' file to its last committed state. 
+// Always ensure to commit or stash your changes before switching branches to avoid losing any uncommitted work.
+
+//git merge with main branch commands
+// First, switch to the main branch
+// git checkout main
+// Then, merge the feature branch into main
+// git merge feature-branch
+// Replace 'feature-branch' with the name of the branch you want to merge into main.
+//git merge with main branch commands
+// First, switch to the main branch
+// git switch main
+// Then, merge the feature branch into main
+// git merge feature-branch
+// Replace 'feature-branch' with the name of the branch you want to merge into main.
+//git merge with main branch commands
